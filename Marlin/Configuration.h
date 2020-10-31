@@ -499,9 +499,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  54.48
-    #define DEFAULT_Ki   7.96
-    #define DEFAULT_Kd  93.26
+    #define DEFAULT_Kp 29.58
+    #define DEFAULT_Ki 2.53
+    #define DEFAULT_Kd 86.31
   #endif
 #endif // PIDTEMP
 
@@ -741,7 +741,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 409 } // tomaski
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 396 } // tomaski
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1093,7 +1093,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false // tomaski
+#define INVERT_E0_DIR true // tomaski
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
@@ -1123,14 +1123,14 @@
 
 // The size of the print bed
 #define X_BED_SIZE 235 // tomaski
-#define Y_BED_SIZE 225 // tomaski
+#define Y_BED_SIZE 230 // tomaski
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS -18
 #define Y_MIN_POS -12 // tomaski
 #define Z_MIN_POS 0
 #define X_MAX_POS 250 // tomaski
-#define Y_MAX_POS 238 // tomaski
+#define Y_MAX_POS 230 // tomaski
 #define Z_MAX_POS 250 // tomaski
 
 /**
